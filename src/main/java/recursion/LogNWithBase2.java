@@ -2,6 +2,7 @@ package recursion;
 
 public class LogNWithBase2 {
 
+    // TC = O(lon(n))
     static int fun(int n)
     {
         if(n == 1)

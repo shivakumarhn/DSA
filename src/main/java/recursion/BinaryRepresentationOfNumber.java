@@ -2,6 +2,7 @@ package recursion;
 
 public class BinaryRepresentationOfNumber {
 
+    // TC = O(log(n))
     static void fun(int n) {
         if (n == 0)
             return;
