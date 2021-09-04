@@ -49,15 +49,15 @@ public class ValidateIPAddress {
 
     public static void main(String[] args) {
 
-        System.out.printf("192.168.0.1");
-        System.out.printf("0.0.0.0");
-        System.out.printf("123.24.59.99");
-        System.out.printf("192.168.123.456");
-        System.out.printf("1.2.3.4.5");
-        System.out.printf("1..23.4");
-        System.out.printf("123.256.34.56");
-        System.out.printf(".254.255.0");
-        System.out.printf("1.2.3.0x1");
+        System.out.println(validateIp("192.168.0.1"));
+        System.out.println(validateIp("0.0.0.0"));
+        System.out.println(validateIp("123.24.59.99"));
+        System.out.println(validateIp("192.168.123.456"));
+        System.out.println(validateIp("1.2.3.4.5"));
+        System.out.println(validateIp("1..23.4"));
+        System.out.println(validateIp("123.256.34.56"));
+        System.out.println(validateIp(".254.255.0"));
+        System.out.println(validateIp("1.2.3.0x1"));
 
       /*Test Case #1
         Input: "192.168.0.1",Expected: true,Actual: true
