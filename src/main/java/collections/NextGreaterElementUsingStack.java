@@ -1,7 +1,8 @@
 package collections;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import arrays.Arraylist;
+
+import java.util.*;
 
 public class NextGreaterElementUsingStack {
 
@@ -54,6 +55,7 @@ public class NextGreaterElementUsingStack {
     public static void main(String[] args) {
 
         int[] arr = {5, 15, 10, 8, 6, 12, 7};
+
         nextGreaterElement(arr);
     }
 }
