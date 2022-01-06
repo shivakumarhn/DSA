@@ -9,7 +9,7 @@ public class BinaryRepresentationOfNumber {
 
         fun(n / 2);
 
-        System.out.println(n % 2);
+        System.out.print(n % 2);
 
     }
 
