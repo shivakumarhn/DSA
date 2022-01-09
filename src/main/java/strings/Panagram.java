@@ -8,7 +8,7 @@ public class Panagram {
     static boolean panagram1(String s) {
 
         int n = s.length();
-        if (n < 20)
+        if (n < 26)
             return false;
 
         boolean[] visited = new boolean[26];

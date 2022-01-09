@@ -17,7 +17,7 @@ public class Anagram {
         return true;
     }
 
-    //TC = O(Logn0
+    //TC = O(Log(n))
     static boolean anagramBit(String s1, String s2) {
 
         int res = 0;
@@ -35,6 +35,7 @@ public class Anagram {
 
         if (s1.length() != s2.length())
             return false;
+
         char[] a1 = s1.toCharArray();
         Arrays.sort(a1);
 
@@ -51,6 +52,7 @@ public class Anagram {
             return false;
     }
 
+    //TC = O(n+CHAR) and AS = O(1)
     static boolean anagramUsingAscii(String s1, String s2) {
 
         if (s1.length() != s2.length())
