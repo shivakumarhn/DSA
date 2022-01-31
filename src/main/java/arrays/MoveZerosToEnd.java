@@ -6,6 +6,7 @@ public class MoveZerosToEnd {
 
     static void moveZerosToEnd(int arr[]) {
 
+
         int n = arr.length;
         // TC O(n2)
         for (int i = 0; i < n; i++) {

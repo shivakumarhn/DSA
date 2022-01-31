@@ -29,7 +29,7 @@ public class NextGreaterElementUsingStack {
         int[] res = new int[n];
         res[n - 1] = -1;
 
-        for (int i = n-2; i >= 0; i--) {
+        for (int i = n - 2; i >= 0; i--) {
             while (stack.isEmpty() == false && stack.peek() <= arr[i]) {
                 stack.pop();
             }
@@ -37,8 +37,8 @@ public class NextGreaterElementUsingStack {
             stack.push(arr[i]);
         }
 
-        for (int j=0; j<res.length; j++)
-            System.out.print(res[j]+ " ");
+        for (int j = 0; j < res.length; j++)
+            System.out.print(res[j] + " ");
 
       /* for (int i = 0; i < arr.length; i++) {
             int j = i;
@@ -56,6 +56,6 @@ public class NextGreaterElementUsingStack {
 
         int[] arr = {5, 15, 10, 8, 6, 12, 7};
 
-        nextGreaterElement(arr);
+        // nextGreaterElement(arr);
     }
 }

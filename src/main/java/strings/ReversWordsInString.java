@@ -68,7 +68,7 @@ public class ReversWordsInString {
         char arr[] = s.toCharArray();
         reverseWords1(arr, s.length());
         System.out.println(arr);
-       // System.out.println(reverseWords(s));
+        System.out.println(reverseWords(s));
 
     }
 }
