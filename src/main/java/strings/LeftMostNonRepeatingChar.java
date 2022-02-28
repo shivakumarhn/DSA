@@ -17,7 +17,7 @@ public class LeftMostNonRepeatingChar {
                     break;
                 }
             }
-            if (flag == false)
+            if (!flag)
                 return i;
         }
         return -1;
@@ -26,22 +26,6 @@ public class LeftMostNonRepeatingChar {
 
     //TC = O(n) and AS = O(1) Better approach
     static int leftMostNonRepeatingChar1(String s) {
-
-        int n = s.length();
-        int[] count = new int[256];
-
-        for (int i = 0; i < n; i++)
-            count[s.charAt(i)]++;
-
-        for (int i = 0; i < n; i++)
-            if (count[s.charAt(i)] == 1)
-                return i;
-
-        return -1;
-    }
-
-    //TC = O(n) and AS = O(char) Better approach
-    static int leftMostNonRepeatingChar2(String s) {
 
         int n = s.length();
         int[] count = new int[256];

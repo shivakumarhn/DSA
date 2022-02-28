@@ -41,11 +41,11 @@ public class ReversWordsInString {
         String rev = "";
         for (int i = s.length - 1; i >= 0; i--)
             rev = new String(reverse(s[i].toCharArray(), 0, s[i].length() - 1)) + " " + rev;
-        //rev = rev + " " +  String.valueOf(reverse(s[i].toCharArray(), 0, s[i].length() - 1));
-        // rev = rev + " " +  String.copyValueOf(reverse(s[i].toCharArray(), 0, s[i].length() - 1));
-        // rev = rev + " " + Stream.of(reverse(s[i].toCharArray(), 0, s[i].length() - 1))
-        //     .map(arr -> new String(arr))
-        //    .collect(Collectors.joining());
+        /* rev = rev + " " +  String.valueOf(reverse(s[i].toCharArray(), 0, s[i].length() - 1));
+         rev = rev + " " +  String.copyValueOf(reverse(s[i].toCharArray(), 0, s[i].length() - 1));
+         rev = rev + " " + Stream.of(reverse(s[i].toCharArray(), 0, s[i].length() - 1))
+             .map(arr -> new String(arr))
+            .collect(Collectors.joining()); */
 
         return rev;
     }
