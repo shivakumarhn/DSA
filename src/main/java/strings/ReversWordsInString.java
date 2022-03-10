@@ -27,8 +27,8 @@ public class ReversWordsInString {
                 start = end + 1;
             }
         }
-        reverse1(str, start, n - 1);
-        reverse1(str, 0, n - 1);
+        reverse1(str, start, n - 1); // to reverse last word
+        reverse1(str, 0, n - 1);  // to reverse whole string
     }
 
 

@@ -9,7 +9,7 @@ public class FirstRepeating {
 
         for (int i = 0; i < n; i++) {
             for (int j = n - 1; j > i; j--) {
-                if (arr[i] == arr[j] && j < repeated ) {
+                if (arr[i] == arr[j] && j < repeated) {
                     repeated = j;
                     break;
                 }
@@ -23,12 +23,24 @@ public class FirstRepeating {
         return -1;
     }
 
+
+    static int firstRepeating(int arr[]) {
+
+        int n = arr.length;
+        for (int i = 0; i < n; i++)
+            for (int j = i + 1; j < n; j++)
+                if (arr[i] == arr[j])
+                    return i;
+        return -1;
+    }
+
     public static void main(String[] args) {
 
-        //int arr[] = {1, 2, 3, 4, 4, 5, 1};
-        int arr[] = {1, 2, 3, 4, 5, 1, 4};
+        int arr[] = {1, 2, 3, 4, 4, 3, 6};
+        //int arr[] = {1, 2, 3, 4, 5, 1, 4};
 
         System.out.println(firstRepeat(arr));
+        System.out.println(firstRepeating(arr));
     }
 }
 
