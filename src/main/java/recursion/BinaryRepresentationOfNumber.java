@@ -14,6 +14,7 @@ public class BinaryRepresentationOfNumber {
     }
 
     public static void main(String[] args) {
-        fun(7);
+
+        fun(11);
     }
 }
